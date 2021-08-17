@@ -29,7 +29,6 @@ body {
   align-items: center;
 }
 /*Backgroud images*/
-
 .image-top,
 .image-buttom {
   position: absolute;
@@ -118,4 +117,73 @@ body {
 .text-photos {
   display: inline-block;
   margin-bottom: 30%;
+}
+/*Media query*/
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    font-size: 1rem;
+  }
+
+  /*Main container*/
+  .main-container {
+    width: 27%;
+  }
+
+  .main-container__header img {
+    height: 100%;
+  }
+  .main-container__header img:first-of-type {
+    border-radius: 10% 10% 0 0;
+  }
+  .main-container__header img:last-of-type {
+    top: -60%;
+    width: 30%;
+  }
+  /*Main container user info*/
+  .user-name {
+    padding-top: 20%;
+    margin-bottom: 2%;
+  }
+  .user-age,
+  .user-country,
+  .text-followes,
+  .text-likes,
+  .text-photos {
+    color: hsl(0, 0%, 59%);
+  }
+  .user-country {
+    margin-top: 0;
+  }
+  .main-container__user {
+    border-radius: 0 0 10% 10%;
+  }
+  /*User Data */
+  .main-container__user-data {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .follow,
+  .likes,
+  .photos {
+    text-align: center;
+  }
+  .user-follow,
+  .user-likes,
+  .user-photos {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+  .user-age,
+  .user-country {
+    font-weight: normal;
+  }
+  .text-followes,
+  .text-likes,
+  .text-photos {
+    display: inline-block;
+    margin-bottom: 20%;
+  }
 }
